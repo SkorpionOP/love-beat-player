@@ -58,11 +58,11 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         love: {
-          pink: "hsl(var(--love-pink))",
-          "pink-light": "hsl(var(--love-pink-light))",
-          "pink-glow": "hsl(var(--love-pink-glow))",
-          purple: "hsl(var(--love-purple))",
-          red: "hsl(var(--love-red))",
+          blue: "hsl(var(--love-blue))",
+          "blue-light": "hsl(var(--love-blue-light))",
+          "blue-glow": "hsl(var(--love-blue-glow))",
+          cyan: "hsl(var(--love-cyan))",
+          electric: "hsl(var(--love-electric))",
         },
       },
       borderRadius: {
