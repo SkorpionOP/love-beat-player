@@ -103,11 +103,11 @@ export function MusicPlayer({ songs, onPlayingChange }: MusicPlayerProps) {
     <div className="relative z-10 w-full max-w-2xl mx-auto px-4">
       <Card 
         className={`
-          romantic-gradient shadow-romantic border-love-pink-light/30 
+          romantic-gradient shadow-romantic border-love-blue/40 
           backdrop-blur-sm bg-card/95 p-8 rounded-3xl
           transition-all duration-300
           ${isTransitioning ? 'scale-95 opacity-80' : 'scale-100 opacity-100'}
-          ${isPlaying ? 'animate-pulse-soft' : ''}
+          ${isPlaying ? 'animate-pulse-soft shadow-[0_0_60px_rgba(59,130,246,0.6)]' : ''}
         `}
       >
         {/* Album Art */}
@@ -115,9 +115,9 @@ export function MusicPlayer({ songs, onPlayingChange }: MusicPlayerProps) {
           <div 
             className={`
               w-64 h-64 mx-auto rounded-3xl shadow-glow 
-              bg-gradient-to-br from-love-pink to-love-purple
+              bg-gradient-to-br from-love-blue to-love-cyan
               flex items-center justify-center overflow-hidden
-              ${isPlaying ? 'animate-pulse-soft' : ''}
+              ${isPlaying ? 'animate-pulse-soft shadow-[0_0_50px_rgba(59,130,246,0.8)]' : ''}
               transition-all duration-500
               ${isTransitioning ? 'translate-x-full opacity-0' : 'translate-x-0 opacity-100'}
             `}
@@ -129,7 +129,7 @@ export function MusicPlayer({ songs, onPlayingChange }: MusicPlayerProps) {
                 className="w-full h-full object-cover"
               />
             ) : (
-              <Heart className="w-32 h-32 text-white animate-heart-beat" fill="currentColor" />
+              <Heart className="w-32 h-32 text-white animate-heart-beat drop-shadow-[0_0_30px_rgba(255,255,255,0.8)]" fill="currentColor" />
             )}
           </div>
         </div>
